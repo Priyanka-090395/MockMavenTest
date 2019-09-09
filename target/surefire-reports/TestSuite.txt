@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 3, Errors: 0, Skipped: 9, Time elapsed: 1.221 s <<< FAILURE! - in TestSuite
+SetUpClass(com.fayaaz.ali.Integration.UserManagerITTest)  Time elapsed: 0.397 s  <<< FAILURE!
+java.sql.SQLException: No suitable driver found for jdbc:h2:mem:test
+	at com.fayaaz.ali.Integration.UserManagerITTest.SetUpClass(UserManagerITTest.java:25)
+
+null on com.fayaaz.ali.repositories.UserRepositoriesTest(com.fayaaz.ali.repositories.UserRepositoriesTest)  Time elapsed: 0.021 s  <<< FAILURE!
+java.sql.SQLException: No suitable driver found for jdbc:h2:mem:test
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.setupClass(UserRepositoriesTest.java:26)
+
+null on com.fayaaz.ali.repositories.UserRepositoriesTest(com.fayaaz.ali.repositories.UserRepositoriesTest)  Time elapsed: 0.021 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.tearDownClass(UserRepositoriesTest.java:76)
+

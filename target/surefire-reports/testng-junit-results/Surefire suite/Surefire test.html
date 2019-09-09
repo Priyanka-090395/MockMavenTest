@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/5</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 09 15:21:32 CEST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (425 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.null()'><b>null</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td><div><pre>java.sql.SQLException: No suitable driver found for jdbc:h2:mem:test
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fayaaz.ali.services.BaseTest.getH2Connection(BaseTest.java:35)
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.setupClass(UserRepositoriesTest.java:26)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515809288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515809288'><pre>java.sql.SQLException: No suitable driver found for jdbc:h2:mem:test
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fayaaz.ali.services.BaseTest.getH2Connection(BaseTest.java:35)
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.setupClass(UserRepositoriesTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:74)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:65)
+	at org.testng.TestRunner$1.run(TestRunner.java:656)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:847)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:685)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.fayaaz.ali.repositories.UserRepositoriesTest</td></tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.null()'><b>null</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.tearDownClass(UserRepositoriesTest.java:76)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2030411960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2030411960'><pre>java.lang.NullPointerException
+	at com.fayaaz.ali.repositories.UserRepositoriesTest.tearDownClass(UserRepositoriesTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:74)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:65)
+	at org.testng.TestRunner$1.run(TestRunner.java:656)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:847)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:685)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.fayaaz.ali.repositories.UserRepositoriesTest</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.fayaaz.ali.services.UserServiceTest.ShouldReturnUserServiceImplementation()'><b>ShouldReturnUserServiceImplementation</b><br>Test class: com.fayaaz.ali.services.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>ShouldReturnUserServiceImplementation(com.fayaaz.ali.services.UserServiceTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.AppTest.shouldAnswerWithTrue()'><b>shouldAnswerWithTrue</b><br>Test class: com.fayaaz.ali.AppTest</td>
+<td></td>
+<td>0</td>
+<td>shouldAnswerWithTrue(com.fayaaz.ali.AppTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.CalculatorTest.shouldReturnInstanceOfACalculator()'><b>shouldReturnInstanceOfACalculator</b><br>Test class: com.fayaaz.ali.CalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnInstanceOfACalculator(com.fayaaz.ali.CalculatorTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.managers.UserManagerTest.shouldReturnInstanceOfUserManager()'><b>shouldReturnInstanceOfUserManager</b><br>Test class: com.fayaaz.ali.managers.UserManagerTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnInstanceOfUserManager(com.fayaaz.ali.managers.UserManagerTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.services.UserServiceTest.shouldReturnListOfAllUsers()'><b>shouldReturnListOfAllUsers</b><br>Test class: com.fayaaz.ali.services.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnListOfAllUsers(com.fayaaz.ali.services.UserServiceTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.CalculatorTest.shouldReturnTwoWhenOnePlusOneCalledOnAdd()'><b>shouldReturnTwoWhenOnePlusOneCalledOnAdd</b><br>Test class: com.fayaaz.ali.CalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnTwoWhenOnePlusOneCalledOnAdd(com.fayaaz.ali.CalculatorTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.managers.UserManagerTest.showReturnListOfUser()'><b>showReturnListOfUser</b><br>Test class: com.fayaaz.ali.managers.UserManagerTest</td>
+<td></td>
+<td>0</td>
+<td>showReturnListOfUser(com.fayaaz.ali.managers.UserManagerTest)</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.shouldReturnAllUser()'><b>shouldReturnAllUser</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnAllUser(com.fayaaz.ali.repositories.UserRepositoriesTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.shouldReturnAllUserThenThrowSQLException()'><b>shouldReturnAllUserThenThrowSQLException</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnAllUserThenThrowSQLException(com.fayaaz.ali.repositories.UserRepositoriesTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.shouldReturnUserRepoImpl()'><b>shouldReturnUserRepoImpl</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td></td>
+<td>0</td>
+<td>shouldReturnUserRepoImpl(com.fayaaz.ali.repositories.UserRepositoriesTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.shouldTestSpy()'><b>shouldTestSpy</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td></td>
+<td>0</td>
+<td>shouldTestSpy(com.fayaaz.ali.repositories.UserRepositoriesTest)</td></tr>
+<tr>
+<td title='com.fayaaz.ali.repositories.UserRepositoriesTest.shouldTestSpySecondCall()'><b>shouldTestSpySecondCall</b><br>Test class: com.fayaaz.ali.repositories.UserRepositoriesTest</td>
+<td></td>
+<td>0</td>
+<td>shouldTestSpySecondCall(com.fayaaz.ali.repositories.UserRepositoriesTest)</td></tr>
+</table><p>
+</body>
+</html>
