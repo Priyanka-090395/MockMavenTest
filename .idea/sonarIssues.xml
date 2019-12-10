@@ -8,7 +8,47 @@
             <set />
           </value>
         </entry>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/allowedcalculator/ActivationStateCalculator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/allowedcalculator/ProductsAndCommandsManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/clients/externaldata/ExternalDataUser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/clients/model/PamBody.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/clients/model/PamBodyResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/functions/GetMockedLicenseMgtService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/functions/changeevents/util/ChangeEventHandler.java">
           <value>
             <set />
           </value>
@@ -18,7 +58,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/repository/pmsconfig/model/PMSCommand.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/test/java/com/wirelesscar/pcm/clients/ProductActivationManagementClientTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/test/java/com/wirelesscar/pcm/clients/externaldata/ExternalDataUserTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/test/java/com/wirelesscar/pcm/functions/changeevents/InternalEventListenerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/test/java/com/wirelesscar/pcm/testutil/ExternalDataTestUtil.java">
           <value>
             <set />
           </value>

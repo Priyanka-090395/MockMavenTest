@@ -32,4 +32,10 @@ public class UserManagerTest {
         Assert.assertEquals(4,results.size());
         verify(userServiceMock, Mockito.times(1)).getAllUsers();
     }
+
+    @Test
+    public void shouldTestDefaultConstructor() {
+        UserManager userManager = new UserManager();
+        Assert.assertNotNull(userManager);
+    }
 }
