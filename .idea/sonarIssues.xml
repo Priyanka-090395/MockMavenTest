@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/clients/model/PamBody.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/main/java/com/wirelesscar/pcm/functions/pmsptriggers/ProvisioningEvents.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Repository/product-and-command-management/src/test/java/com/wirelesscar/pcm/clients/ProductActivationManagementClientTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
